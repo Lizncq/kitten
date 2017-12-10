@@ -1,0 +1,42 @@
+   header {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+  }
+  .kitten {
+   z-index: 1000;
+   margin-top: 100px;
+   position: absolute;
+   bottom: 50px;
+  }
+
+  .font {
+   width: 100%;
+   z-index: 1;
+   position: relative;
+  }
+
+@media (max-width: 900px) {
+  .kitten {
+    content: url('../assets/img/kitten-medium.png');
+  }
+
+  .font {
+   content: url('../assets/img/dawn.png');
+   z-index: 1;
+   position: relative;
+  }
+}
+@media (max-width: 700px) {
+  .kitten {
+    content: url('../assets/img/kitten-small.png');
+  }
+
+  .font {
+   content: url('../assets/img/night.jpg');
+   z-index: 1;
+   position: relative;
+  }
+}
